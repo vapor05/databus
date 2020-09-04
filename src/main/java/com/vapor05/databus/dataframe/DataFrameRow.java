@@ -12,27 +12,13 @@ public class DataFrameRow<T> {
         this.vector = vector;
     }
     
-    public int sumInt()
+    public T[] getVector()
     {
-        Stream<Integer> stream = (Stream<Integer>) Arrays.stream(vector);
-        
-        
-        return stream.reduce(0, (subtotal, element) -> subtotal + element);
+        return vector;
     }
     
-    public long sumLong()
+    public Stream<T> getStream()
     {
-        Stream<Long> stream = (Stream<Long>) Arrays.stream(vector);
-        
-        
-        return stream.reduce(0L, (subtotal, element) -> subtotal + element);
-    }
-    
-    public double sumDouble()
-    {
-        Stream<Double> stream = (Stream<Double>) Arrays.stream(vector);
-        
-        return stream.reduce(0.0, (subtotal, element) -> subtotal + element);
-    }
-            
+        return Arrays.stream(vector);
+    }       
 }
