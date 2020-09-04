@@ -1,0 +1,6 @@
+id,col1,date,stringCol,floatCol
+1,45,2020-07-24,"abcd",234.5
+2,90,2019-02-12,"some data",9.087
+3,4,2020-09-08,"some more data in this column",4.0
+4,10,2008-02-23,"some string data",0.00008
+5,982346,1998-05-28,"efgi",89.06
